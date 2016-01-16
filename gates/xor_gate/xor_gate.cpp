@@ -5,9 +5,9 @@
  * @brief  Logic "xor gate" described using systemC library
  **/
 
-#include "or_gate.h"
+#include "xor_gate.h"
 
-void Xor_Gate::operarion(){
+void Xor_Gate::operation(){
 
 	c_out.write( a_in.read() ^ b_in.read());
 

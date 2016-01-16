@@ -7,7 +7,7 @@
 
 #include "not_gate.h"
 
-void Not_Gate::operarion(){
+void Not_Gate::operation(){
 
 	c_out.write( !a_in.read() );
 

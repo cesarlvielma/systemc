@@ -3,10 +3,10 @@
 #----------------------------------------------------------------------------------------
 
 # .cpp files
-SRCS = nand_gate.cpp testbench.cpp main.cpp
+SRCS = not_gate.cpp testbench.cpp main.cpp
 
 # executable name
-TARGET = nand_gate
+TARGET = not_gate
 
 # SystemC folder name
 SYSTEMC = /usr/lib/systemc-2.3.1
@@ -15,7 +15,7 @@ INCDIR = -I. -I.. -I$(SYSTEMC)/include
 LIBDIR = -L. -L.. -L$(SYSTEMC)/lib-linux64
 LIBS   = -lsystemc -lm
 
-CC     = g++
+CC     = g++-4.4
 CFLAGS = -g -Wno-deprecated -Wall
 OBJS   = $(SRCS:.cpp=.o)
 

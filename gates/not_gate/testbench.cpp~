@@ -9,7 +9,7 @@
 
 void Testbench::test(){
 
-cout<<"Time \t a \t c "<<endl;
+cout<<"Time \t x \t y "<<endl;
 	cout<<"---------------------------------------------------"<<endl;
 
 	a_out.write(0);

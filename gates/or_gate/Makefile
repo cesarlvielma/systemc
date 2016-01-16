@@ -9,13 +9,13 @@ SRCS = or_gate.cpp testbench.cpp main.cpp
 TARGET = or_gate
 
 # SystemC folder name
-SYSTEMC = /usr/lib/systemc-2.2.0
+SYSTEMC = /usr/lib/systemc-2.3.1
 
 INCDIR = -I. -I.. -I$(SYSTEMC)/include
-LIBDIR = -L. -L.. -L$(SYSTEMC)/lib-linux
+LIBDIR = -L. -L.. -L$(SYSTEMC)/lib-linux64
 LIBS   = -lsystemc -lm
 
-CC     = g++-4.4
+CC     = g++
 CFLAGS = -g -Wno-deprecated -Wall
 OBJS   = $(SRCS:.cpp=.o)
 

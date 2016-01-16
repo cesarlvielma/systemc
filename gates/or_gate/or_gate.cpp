@@ -7,8 +7,8 @@
 
 #include "or_gate.h"
 
-void Or_Gate::operarion(){
+void Or_Gate::operation(){
 
-	c_out.write( a_in.read() && b_in.read());
+	c_out.write( a_in.read() || b_in.read());
 
 }

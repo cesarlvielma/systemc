@@ -5,8 +5,8 @@
  * @brief  Logic "nand gate" described using systemC library
  **/
 
-#ifndef AND_GATE_H
-#define AND_GATE_H
+#ifndef NAND_GATE_H
+#define NAND_GATE_H
 
 #include <systemc.h>
 

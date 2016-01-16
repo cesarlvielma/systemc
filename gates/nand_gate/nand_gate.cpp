@@ -7,7 +7,7 @@
 
 #include "nand_gate.h"
 
-void Nand_Gate::operarion(){
+void Nand_Gate::operation(){
 
 	c_out.write( !( a_in.read() && b_in.read() ) );
 

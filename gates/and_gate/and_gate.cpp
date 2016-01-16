@@ -7,7 +7,7 @@
 
 #include "and_gate.h"
 
-void And_Gate::operarion(){
+void And_Gate::operation(){
 
 	c_out.write( a_in.read() && b_in.read());
 

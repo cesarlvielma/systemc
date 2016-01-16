@@ -6,7 +6,7 @@
  **/
 
 #include "nand_gate.h"
-#include "TestBench.h"
+#include "testbench.h"
 
 int sc_main(int argc,char *argv[]){
 
