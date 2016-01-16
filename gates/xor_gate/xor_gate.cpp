@@ -9,6 +9,6 @@
 
 void Xor_Gate::operarion(){
 
-	c_out.write( a_in.read() && b_in.read());
+	c_out.write( a_in.read() ^ b_in.read());
 
 }
