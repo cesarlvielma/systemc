@@ -1,11 +1,3 @@
-/**
- * @author Cesar L. Vielma P.
- * @mail cesarlvielma@gmail.com
- * @date 2013-3-3
- * @brief  test for full adder.
- **/
-
-
 #ifndef TESTBENCH_H
 #define TESTBENCH_H
 #include <systemc.h>

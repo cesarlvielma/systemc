@@ -1,10 +1,3 @@
-/**
- * @author Cesar L. Vielma P.
- * @mail cesarlvielma@gmail.com
- * @date 2013-3-3
- * @brief  main file for full adder test
- **/
-
 #include "full_adder.h"
 #include "testbench.h"
 
