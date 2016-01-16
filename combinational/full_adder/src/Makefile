@@ -1,25 +1,25 @@
 #-----------------------------------------------------------------------------------------
-# Makefile model to compile design files coding using SystemC library
+# Modelo de Makefile para compilaci�n de dise�os realizados con la librer�a SystemC
 #----------------------------------------------------------------------------------------
 
-# .cpp files
-SRCS = not_gate.cpp testbench.cpp main.cpp
+# Especificar los archivos .cpp en SRCS y los archivos .h en SRCH
+SRCS = full_adder.cpp testbench.cpp xor_gate.cpp and_gate.cpp or_gate.cpp main.cpp
 
-# executable name
-TARGET = not_gate
+# Nombre del ejecutable
+TARGET = full_adder
 
-# SystemC folder name
+# Variable que apunta a la carpeta de SystemC
 SYSTEMC = /usr/lib/systemc-2.3.1
 
 INCDIR = -I. -I.. -I$(SYSTEMC)/include
 LIBDIR = -L. -L.. -L$(SYSTEMC)/lib-linux64
 LIBS   = -lsystemc -lm
 
-CC     = g++-4.4
+CC     = g++
 CFLAGS = -g -Wno-deprecated -Wall
 OBJS   = $(SRCS:.cpp=.o)
 
-
+#En caso de trabajar con windows colocar la extensi�n .exe
 EXE    = $(TARGET)
 
 .SUFFIXES: .cpp .o  
